@@ -4,36 +4,33 @@
     <meta charset="UTF-8">
     <title>Flashcard Quiz</title>
     <style>
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
     background: #f0f0f0;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* vertical centering */
+    align-items: center;      /* horizontal centering */
+    text-align: center;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 img {
     width: auto;
-    max-width: 100%;       /* image fits screen width */
-    max-height: 80vh;      /* image uses at most 80% of viewport height */
+    max-width: 100%;
+    max-height: 60vh;         /* leave room for answer/buttons */
     border: 2px solid #ccc;
     border-radius: 10px;
-    object-fit: contain;   /* scales image without cropping */
+    object-fit: contain;
     display: block;
-    margin: 20px auto 0 auto;  /* top spacing, centered */
-}
-
-.card {
-    margin-top: 20px;
-}
-
-button {
-    padding: 10px 20px;
-    margin: 10px 5px;
-    font-size: 16px;
-    cursor: pointer;
-    width: 45%;           /* buttons fit nicely side by side on mobile */
-    box-sizing: border-box;
+    margin: 10px 0;
 }
 
 #answer {
@@ -43,6 +40,16 @@ button {
     margin-top: 10px;
     color: #333;
 }
+
+button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 45%;               /* fits nicely on mobile */
+    box-sizing: border-box;
+}
+
 
     </style>
 </head>
@@ -92,4 +99,5 @@ button {
     </script>
 </body>
 </html>
+
 
